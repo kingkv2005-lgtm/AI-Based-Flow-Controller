@@ -77,7 +77,7 @@ Target Output:
 
 ---
 
-## 📈 Data Preprocessing
+## Data Preprocessing
 
 Before training, the dataset undergoes several preprocessing steps:
 
@@ -102,7 +102,7 @@ These preprocessing steps improve model convergence and prediction performance.
 ---
 
 
-## 🧠 Model Training
+##  Model Training
 
 The GRU neural network is trained using:
 
@@ -189,7 +189,7 @@ This project is developed for academic and research purposes.
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **Vishal K**
 **Jemmy Angel K**
