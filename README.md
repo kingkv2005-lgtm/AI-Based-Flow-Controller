@@ -39,6 +39,26 @@ The trained GRU model is exported to **ONNX** and executed using **ONNX Runtime*
 
 ---
 
+## Dataset
+
+This project uses a **synthetic industrial process dataset** created to simulate real-world flow control conditions.
+
+The dataset contains process variables commonly used in industrial flow systems, including:
+
+- Setpoint
+- Error
+- Delta Pressure (ΔP)
+- Valve Position
+- Control Signal
+- Pipe Diameter
+- Temperature
+
+The target variable is:
+
+- Flow
+
+The synthetic dataset was generated for academic research and machine learning model development purposes.
+
 ## Input Features
 
 The model predicts flow using the following process variables:
@@ -57,6 +77,19 @@ Target Output:
 
 ---
 
+## 📈 Data Preprocessing
+
+Before training, the dataset undergoes several preprocessing steps:
+
+- Standard scaling of input features
+- Min-Max scaling of target values
+- Sliding window sequence generation (Window Size = 50)
+- Train/Test split
+- Conversion to PyTorch tensors
+
+These preprocessing steps improve model convergence and prediction performance.
+
+
 ## Model Architecture
 
 - Model: GRU (Gated Recurrent Unit)
@@ -67,6 +100,20 @@ Target Output:
 - Output: Predicted Flow
 
 ---
+
+
+## 🧠 Model Training
+
+The GRU neural network is trained using:
+
+- Loss Function: Mean Squared Error (MSE)
+- Optimizer: Adam
+- Epochs: 100
+- Hidden Units: 32
+- Sequence Length: 50
+
+The trained model is exported to ONNX format for deployment and real-time inference.
+
 
 ## Evaluation Metrics
 
