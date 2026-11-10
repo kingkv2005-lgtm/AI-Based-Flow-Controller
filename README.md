@@ -257,8 +257,7 @@ python src/inference.py
 ## Contributors
 
 - **Vishal K**
-- **Jemmy Angel K**
-- **Vishwa R**
+
 
 ## License
 
