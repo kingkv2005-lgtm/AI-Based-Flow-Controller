@@ -261,4 +261,6 @@ python src/inference.py
 
 ## License
 
-No open-source license has been added to this repository yet. Until the project contributors agree on and add a license, the repository should not be treated as having an explicit open-source reuse grant.
+This project is licensed under the MIT License. You are free to use, modify, and distribute this software in accordance with the terms of the license.
+
+See the LICENSE file for the complete license text.
